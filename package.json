@@ -1,0 +1,13 @@
+{
+  "name": "generator-angular",
+  "version": "0.1.0",
+  "description": "",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "emmanueldemey <demey.emmanuel@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^0.18.7"
+  }
+}
