@@ -5,6 +5,7 @@
   "keywords": [
     "yeoman-generator"
   ],
+  "main": "app/index.js",
   "author": "emmanueldemey <demey.emmanuel@gmail.com>",
   "license": "MIT",
   "dependencies": {
