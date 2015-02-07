@@ -1,0 +1,6 @@
+{
+  "check": [
+    "eslint:app",
+    "eslint:test"
+  ]
+}

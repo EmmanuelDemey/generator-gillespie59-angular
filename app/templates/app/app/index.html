@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="<%= moduleName %>">
+	<head>
+		<base href="/">
+		<title><%= name %></title>
+		<link href="styles/style.css" />
+	</head>
+	<body>
+		
+		<header></header>
+
+		<nav>
+			
+		</nav>
+		
+		<main data-ui-view></main>
+		
+		<footer></footer>
+
+		<script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+		<script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+		<script type="text/javascript" src="vendor/lodash/lodash.min.js"></script>
+
+		<script type="text/javascript" src="javascript/Controller/HomeController.js"></script>
+		<script type="text/javascript" src="javascript/App.js"></script>
+	</body>
+</html>
