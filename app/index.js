@@ -96,14 +96,10 @@
 		this.npmInstall(dependencies, { 'saveDev': true });
 	};
 	generator.prototype.installBowerDependencies = function() {
-		var dependencies = [
-			'angular',
-			'angular-mocks',
-			'angular-ui-router',
-			'lodash'
-		];
-
-		this.bowerInstall(dependencies, { 'save': true });
+		this.bowerInstall(['angular'], { 'save': true });
+		this.bowerInstall(['angular-mocks'], { 'save': true });
+		this.bowerInstall(['angular-ui-router'], { 'save': true });
+		this.bowerInstall(['lodash'], { 'save': true });
 	};
 	module.exports = generator;
 })();
