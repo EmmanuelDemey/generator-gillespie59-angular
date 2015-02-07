@@ -83,23 +83,27 @@
 		});
 	};
 
-	generator.prototype.installWorkflowNpmDependencies = function() {
-		this.npmInstall(['bower'], { 'saveDev': true });
-		this.npmInstall(['grunt'], { 'saveDev': true });
-		this.npmInstall(['grunt-cli'], { 'saveDev': true });
-	};
-
-	generator.prototype.installGruntPlugin = function() {
-		this.npmInstall(['grunt-eslint'], { 'saveDev': true });
-		this.npmInstall(['eslint-plugin-angular'], { 'saveDev': true });
-		this.npmInstall(['eslint-plugin-jasmine'], { 'saveDev': true });
-		this.npmInstall(['load-grunt-config'], { 'saveDev': true });
+	generator.prototype.installNpmDependencies = function() {
+		var dependencies = [
+			'bower',
+			'grunt',
+			'grunt-cli',
+			'grunt-eslint',
+			'eslint-plugin-angular',
+			'eslint-plugin-jasmine',
+			'load-grunt-config'
+		];
+		this.npmInstall(dependencies, { 'saveDev': true });
 	};
 	generator.prototype.installBowerDependencies = function() {
-		this.bowerInstall(['angular'], { 'save': true });
-		this.bowerInstall(['angular-mocks'], { 'save': true });
-		this.bowerInstall(['angular-ui-router'], { 'save': true });
-		this.bowerInstall(['lodash'], { 'save': true });
+		var dependencies = [
+			'angular',
+			'angular-mocks',
+			'angular-ui-router',
+			'lodash'
+		];
+
+		this.bowerInstall(dependencies, { 'save': true });
 	};
 	module.exports = generator;
 })();
