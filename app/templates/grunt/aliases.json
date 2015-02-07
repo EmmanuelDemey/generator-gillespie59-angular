@@ -1,6 +1,7 @@
 {
   "check": [
     "eslint:app",
-    "eslint:test"
+    "eslint:test",
+    "travis-lint"
   ]
 }

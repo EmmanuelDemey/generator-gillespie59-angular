@@ -89,6 +89,7 @@
 			'grunt',
 			'grunt-cli',
 			'grunt-eslint',
+			'grunt-travis-lint',
 			'eslint-plugin-angular',
 			'eslint-plugin-jasmine',
 			'load-grunt-config'
