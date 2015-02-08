@@ -5,6 +5,13 @@
   "keywords": [
     "yeoman-generator"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gillespie59/generator-gillespie59-angular.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gillespie59/generator-gillespie59-angular/issues"
+  },
   "main": "app/index.js",
   "author": "emmanueldemey <demey.emmanuel@gmail.com>",
   "license": "MIT",
