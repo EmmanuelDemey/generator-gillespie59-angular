@@ -2,6 +2,16 @@
   "check": [
     "eslint:app",
     "eslint:test",
+    "csslint:app",
     "travis-lint"
+  ], 
+  "build": [
+  	"check",
+  	"clean:release",
+  	"copy:release",
+  	"cssmin:release",
+  	"imagemin:release",
+  	"htmlmin:release",
+  	"uglify:release"
   ]
 }
