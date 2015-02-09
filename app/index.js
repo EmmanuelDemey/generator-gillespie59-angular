@@ -44,6 +44,15 @@
 		);
 	};
 
+	generator.prototype.readme = function(){
+		this.fs.copyTpl(
+			this.templatePath('README.md'),
+			this.destinationPath('README.md'),
+			{
+				name: this.appName
+			}
+		);
+	};
 
 	generator.prototype.bowerrc = function(){
 		this.fs.copy(
