@@ -8,7 +8,8 @@
 		'<%= moduleName %>.controllers'
 	]);
 
-	<%= moduleName %>.config(function($stateProvider, $urlRouterProvider, $locationProvider, $compileProvider) {
+	<%= moduleName %>.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', '$compileProvider',
+		function($stateProvider, $urlRouterProvider, $locationProvider, $compileProvider) {
 			$locationProvider.html5Mode({
 				enabled: true
 			});
@@ -19,5 +20,5 @@
 				templateUrl: 'template/View/home.html',
 				controller: 'HomeController'
 			});
-	});
+	}]);
 })();
