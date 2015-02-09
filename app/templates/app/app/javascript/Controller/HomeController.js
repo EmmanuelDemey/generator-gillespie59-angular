@@ -6,6 +6,6 @@
 
 		HomeController.$inject = ['$scope'];
 		function HomeController($scope){
-			$scope.name = "Name";
+			$scope.name = 'Name';
 		}
 })();

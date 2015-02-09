@@ -4,7 +4,7 @@
 	* Initialization of the global AngularJS module
 	*/
 	var <%= moduleName %> = angular.module('<%= moduleName %>', [
-		'ui.router', 
+		'ui.router',
 		'<%= moduleName %>.controllers'
 	]);
 
