@@ -2,8 +2,7 @@
   "check": [
     "eslint:app",
     "eslint:test",
-    "csslint:app",
-    "travis-lint"
+    "csslint:app"
   ], 
   "build": [
   	"check",

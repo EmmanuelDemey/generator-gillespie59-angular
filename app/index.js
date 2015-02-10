@@ -82,7 +82,7 @@
 			moduleName: this.appName.toLowerCase().replace(/\s+/g, '-')
 		};
 
-		['app/app/index.html', 'app/app/javascript/App.js', 'app/app/javascript/Controller/HomeController.js']
+		['app/app/index.html', 'app/app/javascript/Router.js', 'app/app/javascript/App.js', 'app/app/javascript/Controller/HomeController.js']
 		.forEach(function(file, index){
 			$this.fs.copyTpl(
 				$this.templatePath(file),
