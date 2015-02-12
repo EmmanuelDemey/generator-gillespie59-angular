@@ -1,5 +1,7 @@
 # angular-gillespie59-angular
 
+[![Join the chat at https://gitter.im/Gillespie59/generator-gillespie59-angular](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Gillespie59/generator-gillespie59-angular?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ```
 yo gillespie59-angular
 ```
