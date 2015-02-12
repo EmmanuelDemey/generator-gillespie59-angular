@@ -4,13 +4,17 @@
     "eslint:test",
     "csslint:app"
   ], 
-  "build": [
-  	"check",
-  	"clean:release",
-  	"copy:release",
-  	"cssmin:release",
-  	"imagemin:release",
-  	"htmlmin:release",
-  	"uglify:release"
+  "release": [
+    "check",
+    "clean:release",
+    "copy:release",
+    "cssmin:release",
+    "imagemin:release",
+    "htmlmin:release",
+    "uglify:release",
+    "connect:release"
+  ],
+  "dev": [
+    "connect:dev"
   ]
 }

@@ -103,6 +103,7 @@
 			'grunt-contrib-htmlmin',
 			'grunt-contrib-imagemin',
 			'grunt-contrib-uglify',
+			'grunt-contrib-connect',
 			'grunt-eslint',
 			'grunt-contrib-csslint',
 			'grunt-travis-lint',
