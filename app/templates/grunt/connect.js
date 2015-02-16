@@ -1,6 +1,5 @@
 (function () {
     'use strict';
-
 	module.exports = {
 		release: {
 			options: {
@@ -16,7 +15,7 @@
 				hostname: 'localhost',
 				port: 9001,
 				base: 'app',
-				keepalive: true,
+				livereload: true,
 				open: true
 			}
 		}

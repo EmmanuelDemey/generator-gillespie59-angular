@@ -104,6 +104,8 @@
 			'grunt-contrib-imagemin',
 			'grunt-contrib-uglify',
 			'grunt-contrib-connect',
+			'grunt-contrib-less',
+			'grunt-contrib-watch',
 			'grunt-eslint',
 			'grunt-contrib-csslint',
 			'grunt-travis-lint',

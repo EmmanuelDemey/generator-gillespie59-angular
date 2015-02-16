@@ -8,6 +8,7 @@
     "check",
     "clean:release",
     "copy:release",
+    "less",
     "cssmin:release",
     "imagemin:release",
     "htmlmin:release",
@@ -15,6 +16,8 @@
     "connect:release"
   ],
   "dev": [
-    "connect:dev"
+    "less", 
+    "connect:dev",
+    "watch"
   ]
 }
