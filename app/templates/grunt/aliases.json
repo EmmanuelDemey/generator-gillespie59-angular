@@ -2,7 +2,8 @@
   "check": [
     "eslint:app",
     "eslint:test",
-    "csslint:app"
+    "csslint:app",
+    "jsonlint:app"
   ], 
   "release": [
     "check",

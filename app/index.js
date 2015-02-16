@@ -125,7 +125,8 @@
 			'karma-phantomjs-launcher',
 			'karma-script-launcher',
 			'phantomjs',
-			'protractor'
+			'protractor',
+			'grunt-jsonlint'
 		];
 		this.npmInstall(dependencies, { 'saveDev': true });
 	};
