@@ -6,6 +6,7 @@
   ], 
   "release": [
     "check",
+    "test",
     "clean:release",
     "copy:release",
     "less",
@@ -19,5 +20,12 @@
     "less", 
     "connect:dev",
     "watch"
+  ], 
+  "test:e2e": [
+    "connect:dev",
+    "protractor:e2e"
+  ],
+  "test": [
+    "test:e2e"
   ]
 }
