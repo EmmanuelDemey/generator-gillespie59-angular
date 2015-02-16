@@ -82,7 +82,8 @@
 			moduleName: this.appName.toLowerCase().replace(/\s+/g, '-')
 		};
 
-		['app/app/index.html', 'app/app/javascript/Router.js', 'app/app/javascript/App.js', 'app/app/javascript/Controller/HomeController.js']
+		['app/app/index.html', 'app/app/javascript/Router.js', 'app/app/javascript/App.js', 'app/app/javascript/Controller/HomeController.js',
+		'app/test/unit/controllers/HomeControllerSpec.js', 'app/test/unit/controllers/ModuleSpec.js', 'app/test/unit/modules/ModuleSpec.js']
 		.forEach(function(file, index){
 			$this.fs.copyTpl(
 				$this.templatePath(file),
@@ -114,7 +115,17 @@
 			'grunt-travis-lint',
 			'eslint-plugin-angular',
 			'eslint-plugin-jasmine',
-			'load-grunt-config'
+			'load-grunt-config',
+			'grunt-karma',
+			'karma',
+			'karma-chrome-launcher',
+			'karma-firefox-launcher',
+			'karma-jasmine',
+			'karma-ng-html2js-preprocessor',
+			'karma-phantomjs-launcher',
+			'karma-script-launcher',
+			'phantomjs',
+			'protractor'
 		];
 		this.npmInstall(dependencies, { 'saveDev': true });
 	};

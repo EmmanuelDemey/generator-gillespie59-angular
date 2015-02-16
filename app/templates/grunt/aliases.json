@@ -26,6 +26,7 @@
     "protractor:e2e"
   ],
   "test": [
+    "karma:unit",
     "test:e2e"
   ]
 }
