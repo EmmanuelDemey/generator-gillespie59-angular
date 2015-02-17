@@ -32,6 +32,10 @@
 				expect(hasModule('ngAria')).toBeTruthy();
 			});
 
+			it('should have underscore as a dependency', function() {
+				expect(hasModule('underscore')).toBeTruthy();
+			});
+			
 			it('should have <%= name %>.controllers as a dependency', function() {
 				expect(hasModule('<%= name %>.controllers')).toBeTruthy();
 			});
