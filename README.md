@@ -9,9 +9,16 @@ yo gillespie59-angular
 This Yeoman generator will create an Angular application with : 
 * AngularJS
 * AngularUI router
+* Angular-aria
+* Lodash
 * GruntJS
   * ESLint
-  * Travis Lint
+  * JSON Lint
+  * LESS
+  * Karma
+  * Protractor
+  * Compress Grunt plugin in order to ZIP the application
+  * HTMLmin, CSSmin, Uglify
 * Bower
 
 ## Team
