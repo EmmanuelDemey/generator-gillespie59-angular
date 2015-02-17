@@ -4,8 +4,8 @@
 	angular.module('<%= moduleName %>.controllers', [])
 		.controller('HomeController', HomeController);
 
-		HomeController.$inject = ['$scope'];
-		function HomeController($scope){
-			$scope.name = 'Name';
+		HomeController.$inject = [];
+		function HomeController(){
+			this.name = 'Name';
 		}
 })();

@@ -13,7 +13,8 @@
 			$stateProvider.state('home', {
 				url: '/',
 				templateUrl: 'template/View/home.html',
-				controller: 'HomeController'
+				controller: 'HomeController',
+				controllerAs: 'home'
 			});
 	}
 })();

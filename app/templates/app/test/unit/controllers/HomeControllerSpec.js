@@ -4,23 +4,19 @@
 
 	describe('HomeController:', function() {
 		angular.isUndefined(undefined);
-		var httpBackend, scope, createController;
+		var createController, controller;
 
 		beforeEach(module('<%= name %>.controllers'));
-		beforeEach(inject(function ($rootScope, $controller) {
-			scope = $rootScope.$new();
-
+		beforeEach(inject(function ($controller) {
 			createController = function() {
-				return $controller('HomeController', {
-					'$scope': scope
-				});
+				controller = $controller('HomeController', {});
 			};
 		}));
 
 		it('should have the name property in its scope.', function () {
 			createController();
-			expect(scope.name).toBeDefined();
-			expect(scope.name).toEqual('Name');
+			expect(controller.name).toBeDefined();
+			expect(controller.name).toEqual('Name');
 		});
 
 	});
