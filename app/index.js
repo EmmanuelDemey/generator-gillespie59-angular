@@ -133,6 +133,7 @@
 	generator.prototype.installBowerDependencies = function() {
 		this.bowerInstall(['angular'], { 'save': true });
 		this.bowerInstall(['angular-mocks'], { 'save': true });
+		this.bowerInstall(['angular-aria'], { 'save': true });
 		this.bowerInstall(['angular-ui-router'], { 'save': true });
 		this.bowerInstall(['lodash'], { 'save': true });
 	};

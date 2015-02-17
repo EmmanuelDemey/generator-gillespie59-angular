@@ -5,6 +5,7 @@
 	*/
 	angular.module('<%= moduleName %>', [
 		'ui.router',
+		'ngAria',
 		'<%= moduleName %>.controllers'
 	]);
 })();

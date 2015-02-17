@@ -28,6 +28,10 @@
 				expect(hasModule('ui.router')).toBeTruthy();
 			});
 
+			it('should have ngAria as a dependency', function() {
+				expect(hasModule('ngAria')).toBeTruthy();
+			});
+
 			it('should have <%= name %>.controllers as a dependency', function() {
 				expect(hasModule('<%= name %>.controllers')).toBeTruthy();
 			});
