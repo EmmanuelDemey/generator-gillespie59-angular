@@ -10,11 +10,16 @@
 			});
 			$compileProvider.debugInfoEnabled(false);
 			$urlRouterProvider.otherwise('/');
-			$stateProvider.state('home', {
-				url: '/',
-				templateUrl: 'template/View/home.html',
-				controller: 'HomeController',
-				controllerAs: 'home'
-			});
+			$stateProvider
+				.state('home', {
+					url: '/',
+					templateUrl: 'template/View/home.html',
+					controller: 'HomeController',
+					controllerAs: 'home'
+				})
+				.state('404', {
+					url: '/404',
+					templateUrl: 'template/View/404.html'
+				});
 	}
 })();
