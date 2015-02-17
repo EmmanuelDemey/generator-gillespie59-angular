@@ -1,7 +1,9 @@
 (function(){
 	'use strict';
 
-	angular.module('<%= moduleName %>').config(RouterConfig);
+	angular.module('<%= moduleName %>')
+		.config(RouterConfig)
+		.run(AppRun);
 
 	RouterConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider', '$compileProvider'];
 	function RouterConfig($stateProvider, $urlRouterProvider, $locationProvider, $compileProvider) {
@@ -21,5 +23,12 @@
 					url: '/404',
 					templateUrl: 'template/View/404.html'
 				});
+	}
+
+	AppRun.$inject = ['$rootScope','$state'];
+	function AppRun($rootScope, $state){
+		$rootScope.$on('$stateChangeError', function(){
+			$state.go('404');
+		});
 	}
 })();
