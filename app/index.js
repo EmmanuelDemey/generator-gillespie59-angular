@@ -135,7 +135,8 @@
 			'karma-script-launcher',
 			'phantomjs',
 			'protractor',
-			'grunt-jsonlint'
+			'grunt-jsonlint',
+			'grunt-contrib-compress'
 		];
 		this.npmInstall(dependencies, { 'saveDev': true });
 	};

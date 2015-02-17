@@ -15,7 +15,7 @@
     "imagemin:release",
     "htmlmin:release",
     "uglify:release",
-    "connect:release"
+    "compress:release"
   ],
   "dev": [
     "less", 

@@ -6,7 +6,7 @@
 				archive: 'archive.zip'
 			},
 			files: [
-				{src: ['app/**', '!app/**/*.less'], dest: 'internal_folder/'}
+				{src: ['app/**', '!app/**/*.less'], dest: '/'}
 			]
 		}
 	};

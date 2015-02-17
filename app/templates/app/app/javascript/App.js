@@ -11,6 +11,7 @@
 	angular.module('<%= moduleName %>', [
 		'ui.router',
 		'ngAria',
+		'underscore',
 		'<%= moduleName %>.controllers'
 	]);
 })();
