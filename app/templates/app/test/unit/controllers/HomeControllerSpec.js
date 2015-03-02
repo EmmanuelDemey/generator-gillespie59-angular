@@ -3,7 +3,6 @@
 	'use strict';
 
 	describe('HomeController:', function() {
-		angular.isUndefined(undefined);
 		var createController, controller;
 
 		beforeEach(module('<%= name %>.controllers'));
