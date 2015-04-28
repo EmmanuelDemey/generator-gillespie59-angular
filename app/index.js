@@ -78,7 +78,7 @@
 	generator.prototype.override = function(){
 		var $this = this;
 		var option = {
-			name: this.appName,
+			name: this.appName.toLowerCase(),
 			moduleName: this.appName.toLowerCase().replace(/\s+/g, '-')
 		};
 
