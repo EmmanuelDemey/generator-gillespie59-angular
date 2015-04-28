@@ -1,6 +1,6 @@
 (function(){
 	'use strict';
-	angular.module('underscore', [])
+	angular.module('lodash', [])
 		.factory('_', ['$window', function($window) {
 			return $window._;
 		}]);
@@ -11,7 +11,7 @@
 	angular.module('<%= moduleName %>', [
 		'ui.router',
 		'ngAria',
-		'underscore',
+		'lodash',
 		'<%= moduleName %>.controllers'
 	]);
 })();

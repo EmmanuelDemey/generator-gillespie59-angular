@@ -33,7 +33,7 @@
 			});
 
 			it('should have underscore as a dependency', function() {
-				expect(hasModule('underscore')).toBeTruthy();
+				expect(hasModule('lodash')).toBeTruthy();
 			});
 			
 			it('should have <%= name %>.controllers as a dependency', function() {
